@@ -1,6 +1,6 @@
 <template>
   <ZBlock>
-    <Button type="primary">新建</Button>
+    <Button type="primary"><Icon type="md-add" size="13" /> 新建</Button>
     <Button >Loading</Button>
     <Dropdown>
         <Button>
