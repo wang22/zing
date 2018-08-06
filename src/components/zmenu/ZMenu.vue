@@ -12,34 +12,33 @@
                         <Icon type="ios-create-outline" />
                         表单页面
                     </template>
-                    <MenuItem name="2-1">基础表单</MenuItem>
-                    <MenuItem name="2-2">分步表单</MenuItem>
-                    <MenuItem name="2-3">高级表单</MenuItem>
+                    <MenuItem name="2-1" to="/form/base">基础表单</MenuItem>
+                    <MenuItem name="2-2" to="/form/step">分步表单</MenuItem>
                 </Submenu>
                 <Submenu name="3">
                     <template slot="title">
                         <Icon type="ios-list-box-outline" />
                         表格页面
                     </template>
-                    <MenuItem name="3-1">查询列表</MenuItem>
-                    <MenuItem name="3-2">标准列表</MenuItem>
-                    <MenuItem name="3-3">卡片列表</MenuItem>
+                    <MenuItem name="3-1" to="/table/query">查询列表</MenuItem>
+                    <MenuItem name="3-2" to="/table/base">标准列表</MenuItem>
+                    <MenuItem name="3-3" to="/table/card">卡片列表</MenuItem>
                 </Submenu>
                 <Submenu name="4">
                     <template slot="title">
-                        <Icon type="md-paper" />
+                        <Icon type="ios-paper-outline" />
                         详情页面
                     </template>
-                    <MenuItem name="4-1">基础详情</MenuItem>
-                    <MenuItem name="4-2">高级详情</MenuItem>
+                    <MenuItem name="4-1" to="/page/base">基础详情</MenuItem>
+                    <MenuItem name="4-2" to="/page/senior">高级详情</MenuItem>
                 </Submenu>
             </MenuGroup>
             <MenuGroup title="RESULT">
-                <MenuItem name="10">
+                <MenuItem name="10" to="/result/success">
                     <Icon type="ios-checkmark-circle-outline" />
                     成功
                 </MenuItem>
-                <MenuItem name="11">
+                <MenuItem name="11" to="/result/fail">
                     <Icon type="ios-close-circle-outline" />
                     失败
                 </MenuItem>
@@ -48,23 +47,15 @@
                         <Icon type="ios-alert-outline" />
                         异常页面
                     </template>
-                    <MenuItem name="12-1">404</MenuItem>
-                    <MenuItem name="12-2">500</MenuItem>
+                    <MenuItem name="12-1" to="/error/404">404</MenuItem>
+                    <MenuItem name="12-2" to="/error/500">500</MenuItem>
                 </Submenu>
             </MenuGroup>
             <MenuGroup title="APPLICATION">
-                <MenuItem name="6">
+                <MenuItem name="6" to="/app/email">
                     <Icon type="ios-mail-outline" />
                     邮件
                 </MenuItem>
-                <Submenu name="7">
-                    <template slot="title">
-                        <Icon type="md-trending-up" />
-                        图表
-                    </template>
-                    <MenuItem name="7-1">404</MenuItem>
-                    <MenuItem name="7-2">500</MenuItem>
-                </Submenu>
             </MenuGroup>
             <MenuGroup title="DOCUMENT">
                 <MenuItem name="8">

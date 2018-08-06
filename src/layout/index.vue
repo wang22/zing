@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+  <Layout>
     <Sider hide-trigger width="240" class="z-slider">
       <div class="logo">
       </div>
