@@ -1,11 +1,13 @@
 import ZMenu from './zmenu/ZMenu'
 import ZBlock from './block/ZBlock'
 import ZTable from './table/ZTable'
+import ZScrollBlock from './scroll/ZScrollBlock'
 
 const zComponents = {
     ZMenu,
     ZBlock,
-    ZTable
+    ZTable,
+    ZScrollBlock
 }
 
 const install = function(Vue){

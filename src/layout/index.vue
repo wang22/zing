@@ -3,9 +3,9 @@
     <Sider hide-trigger width="240" class="z-slider">
       <div class="logo">
       </div>
-      <div class="z-left-menu">
+      <ZScrollBlock class="z-left-menu" :height="menuHeight">
         <ZMenu></ZMenu>
-      </div>
+      </ZScrollBlock>
     </Sider>
     <Layout>
         <Header class="z-header">
@@ -54,6 +54,31 @@
     </Layout>
   </Layout>
 </template>
+
+<script>
+  import $ from 'jQuery'
+  export default {
+    mounted () {
+      const self = this;
+      this.resizeHeight();
+      $(window).resize(function(){
+        self.resizeHeight();
+      });
+    },
+    methods: {
+      resizeHeight(){
+        const minHeight = $(window).height() - 70;
+        this.menuHeight = minHeight;
+        $('.z-left-menu').css({"min-height": minHeight});
+      }
+    },
+    data() {
+      return {
+        menuHeight: 100
+      }
+    }
+  }
+</script>
 
 <style lang="css" scoped>
 .logo {

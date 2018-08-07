@@ -6,6 +6,56 @@
                 首页
                 <Badge :count="10" class-name="z-menu-badge"></Badge>
             </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
+            <MenuItem name="1" class="z-only-out">
+                <Icon type="ios-bug-outline" />
+                首页
+                <Badge :count="10" class-name="z-menu-badge"></Badge>
+            </MenuItem>
             <MenuGroup title="BASE">
               <Submenu name="2">
                     <template slot="title">

@@ -3,10 +3,10 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+const webpack = require('webpack');
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -66,6 +66,7 @@ module.exports = {
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report
   },
+
   module: {
     rules: [{
       test: /\.less$/,
@@ -77,5 +78,7 @@ module.exports = {
         loader: 'less-loader' // compiles Less to CSS
       }]
     }]
-  }
+  },
+
+  
 }
