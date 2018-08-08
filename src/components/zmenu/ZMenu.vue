@@ -1,7 +1,7 @@
 <template>
     <div class="z-menu">
         <Menu theme="light" active-name="1" width="200" mode="vertical" :accordion="this.accordion">
-            <MenuItem name="1" class="z-only-out">
+            <MenuItem name="1" class="z-only-out" to="/">
                 <Icon type="ios-bug-outline" />
                 首页
                 <Badge :count="10" class-name="z-menu-badge"></Badge>
@@ -12,7 +12,7 @@
                         <Icon type="ios-create-outline" />
                         表单页面
                     </template>
-                    <MenuItem name="2-1" to="/form/base">基础表单</MenuItem>
+                    <MenuItem name="2-1" to="/form/base">基础表单 <Badge :count="10" class-name="z-menu-badge"></Badge></MenuItem>
                     <MenuItem name="2-2" to="/form/step">分步表单</MenuItem>
                 </Submenu>
                 <Submenu name="3">

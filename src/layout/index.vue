@@ -1,7 +1,10 @@
 <template>
   <Layout>
     <Sider hide-trigger width="240" class="z-slider">
-      <div class="logo">
+      <div class="z-logo">
+        <div class="z-logo-body ">
+          <span>Zing Admin</span>
+        </div>
       </div>
       <div class="z-left-menu">
         <ZMenu></ZMenu>
@@ -56,9 +59,21 @@
 </template>
 
 <style lang="css" scoped>
-.logo {
+.z-logo {
   height: 70px;
   background: #0665d0!important;
+}
+.z-logo .z-logo-body {
+  width: 100%;
+  height: 70px;
+  background-color:rgba(255,255,255,.1)!important;
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.z-logo .z-logo-body span {
+  margin-left: 25px;
+  color: rgba(255,255,255,.75)!important;
 }
 .z-header {
   background-color: #0665d0;
