@@ -6,6 +6,9 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import zAPI from './components/index.js'
+import $ from 'jQuery'
+
+window.jQuery = $
 
 Vue.config.productionTip = false
 Vue.use(iView)
