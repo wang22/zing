@@ -1,20 +1,25 @@
 <template>
-  <ZBlock>
-    <Button type="primary"><Icon type="md-add" size="13" /> 新建</Button>
-    <Button >Loading</Button>
-    <Dropdown>
-        <Button>
-            批量操作
-            <Icon type="ios-arrow-down"></Icon>
-        </Button>
-        <DropdownMenu slot="list">
-            <DropdownItem>批量审批</DropdownItem>
-            <DropdownItem>批量删除</DropdownItem>
-        </DropdownMenu>
-    </Dropdown>
-    <ZTable border ref="selection" :columns="columns4" :data="data1"></ZTable>
-    <Page :total="100" style="margin-top:20px; float:right" show-sizer show-elevator />
-  </ZBlock>
+  <div>
+      <ZBreadcrumb></ZBreadcrumb>
+      <ZContent>
+          <ZBlock>
+            <Button type="primary"><Icon type="md-add" size="13" /> 新建</Button>
+            <Button >Loading</Button>
+            <Dropdown>
+                <Button>
+                    批量操作
+                    <Icon type="ios-arrow-down"></Icon>
+                </Button>
+                <DropdownMenu slot="list">
+                    <DropdownItem>批量审批</DropdownItem>
+                    <DropdownItem>批量删除</DropdownItem>
+                </DropdownMenu>
+            </Dropdown>
+            <ZTable border ref="selection" :columns="columns4" :data="data1"></ZTable>
+            <Page :total="100" style="margin-top:20px; float:right" show-sizer show-elevator />
+        </ZBlock>
+      </ZContent>
+  </div>
 </template>
 
 <script>
