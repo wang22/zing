@@ -39,7 +39,7 @@
         <Content class="z-content" :style="{marginLeft: menuWidth + 'px', marginTop: '70px'}">
           <router-view/>
         </Content>
-        <Footer class="z-footer">
+        <Footer class="z-footer" :style="{marginLeft: menuWidth + 'px'}">
           <a href="#">zing 1.3 </a> @ 2018
           <div style="float:right">Crafted by zing</div>
         </Footer>
