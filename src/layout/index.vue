@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Sider hide-trigger width="240" class="z-slider">
+    <Sider hide-trigger :show="menuIsShow" :width="menuWidth" class="z-slider" :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
       <div class="z-logo">
         <div class="z-logo-body ">
           <span>Zing Admin</span>
@@ -11,8 +11,8 @@
       </ZScrollBlock>
     </Sider>
     <Layout>
-        <Header class="z-header">
-          <Button type="primary" class="z-button"><Icon type="md-menu" size="22"></Icon></Button>
+        <Header class="z-header" :style="{position: 'fixed', width: '100%', marginLeft: menuWidth + 'px', zIndex: 200}">
+          <Button type="primary" class="z-button"  @click="hideLeftMenu()"><Icon type="md-menu" size="22"></Icon></Button>
           <Button type="primary" class="z-button"><Icon type="md-search" size="22" /> <span>搜索</span></Button>
           <div class="z-right">
             <Button type="primary" class="z-button">
@@ -36,7 +36,7 @@
           </Dropdown>
           </div>
         </Header>
-        <Content class="z-content ">
+        <Content class="z-content" :style="{marginLeft: menuWidth + 'px', marginTop: '70px'}">
           <router-view/>
         </Content>
         <Footer class="z-footer">
@@ -62,11 +62,22 @@
         const minHeight = $(window).height() - 70;
         this.menuHeight = minHeight;
         $('.z-left-menu').css({"min-height": minHeight});
+      },
+      hideLeftMenu() {
+        if (this.menuIsShow) {
+          this.menuIsShow = false;
+          this.menuWidth = 0;
+        } else {
+          this.menuIsShow = true;
+          this.menuWidth = 240;
+        }
       }
     },
     data() {
       return {
-        menuHeight: 100
+        menuHeight: 100,
+        menuWidth: 240,
+        menuIsShow: true
       }
     }
   }
