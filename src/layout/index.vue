@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Sider hide-trigger :show="menuIsShow" :width="menuWidth" class="z-slider" :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
+    <Sider hide-trigger :width="menuWidth" class="z-slider" :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
       <div class="z-logo">
         <div class="z-logo-body ">
           <span>Zing Admin</span>
