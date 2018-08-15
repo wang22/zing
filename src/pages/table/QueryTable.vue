@@ -3,49 +3,27 @@
       <ZBreadcrumb></ZBreadcrumb>
       <ZContent>
         <ZBlock>
-            <Form :label-width="80" style="border:1px dashed #ddd; padding: 20px; border-radius: 4px;">
-                <Row>
-                    <Col span="8">
-                        <FormItem label="年龄">
-                            <Input placeholder="Enter something..."></Input>
-                        </FormItem>
-                    </Col>
-                    <Col span="8">
-                        <FormItem label="姓名">
-                            <Input placeholder="Enter something..."></Input>
-                        </FormItem>
-                    </Col>
-                    <Col span="8">
-                        <FormItem label="城市">
-                            <Input placeholder="Enter something..."></Input>
-                        </FormItem>
-                    </Col>
-                    <Col span="8">
-                        <FormItem label="国家">
-                            <Select>
-                                <Option value="beijing">New York</Option>
-                                <Option value="shanghai">London</Option>
-                                <Option value="shenzhen">Sydney</Option>
-                            </Select>
-                        </FormItem>
-                    </Col>
-                    <Col span="8">
-                        <FormItem label="城市">
-                            <Input placeholder="Enter something..."></Input>
-                        </FormItem>
-                    </Col>
-                    <Col span="8">
-                        <FormItem label="城市">
-                            <Input placeholder="Enter something..."></Input>
-                        </FormItem>
-                    </Col>
-                    <Col span="24" style="text-align: right;">
-                        <Button style="margin-left: 16px" type="primary">搜索</Button>
-                        <Button style="margin-left: 8px">重置</Button>
-                        <Button style="margin-left: 8px" type="dashed">展开 <Icon type="ios-arrow-down" /></Button>
-                    </Col>
-                </Row>
-            </Form>
+            <ZQueryblock>
+                <FormItem label="请输入年龄">
+                    <Input placeholder="Enter something..."></Input>
+                </FormItem>
+                <FormItem label="姓名">
+                    <Input placeholder="Enter something..."></Input>
+                </FormItem>
+                <FormItem label="请输入城市">
+                    <Input placeholder="Enter something..."></Input>
+                </FormItem>
+                <FormItem label="国家">
+                    <Select>
+                        <Option value="beijing">New York</Option>
+                        <Option value="shanghai">London</Option>
+                        <Option value="shenzhen">Sydney</Option>
+                    </Select>
+                </FormItem>
+                <FormItem label="城市">
+                    <Input placeholder="Enter something..."></Input>
+                </FormItem>
+            </ZQueryblock>
             <br>
             <Button type="primary"><Icon type="md-add" size="13" /> 新建</Button>
             <Button >Loading</Button>

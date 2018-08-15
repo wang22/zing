@@ -14,7 +14,7 @@
         <Header class="z-header" :style="{position: 'fixed', width: '100%', marginLeft: menuWidth + 'px', zIndex: 200}">
           <Button type="primary" class="z-button"  @click="hideLeftMenu()"><Icon type="md-menu" size="22"></Icon></Button>
           <Button type="primary" class="z-button"><Icon type="md-search" size="22" /> <span>搜索</span></Button>
-          <div class="z-right">
+          <div class="z-right" :style="{marginRight: menuWidth + 'px', zIndex: 200}">
             <Button type="primary" class="z-button">
               <Badge dot>
                 <Icon type="md-notifications-outline" size="22"></Icon>
