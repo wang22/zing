@@ -10,7 +10,7 @@
         <ZMenu></ZMenu>
       </ZScrollBlock>
     </Sider>
-    <Layout>
+    <Layout :style="{height: '100vh'}">
         <Header class="z-header" :style="{position: 'fixed', width: '100%', marginLeft: menuWidth + 'px', zIndex: 200}">
           <Button type="primary" class="z-button"  @click="hideLeftMenu()"><Icon type="md-menu" size="22"></Icon></Button>
           <Button type="primary" class="z-button"><Icon type="md-search" size="22" /> <span>搜索</span></Button>
