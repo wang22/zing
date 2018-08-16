@@ -19,11 +19,11 @@
             </ul>
         </ZBlock>
         <ZBlock>
-            <ButtonGroup>
-                <Button type="primary">全部</Button>
-                <Button>进行中</Button>
-                <Button>等待中</Button>
-            </ButtonGroup>
+            <RadioGroup type="button">
+                <Radio label="all">全部</Radio>
+                <Radio label="ing">进行中</Radio>
+                <Radio label="wait">等待中</Radio>
+            </RadioGroup>
             <Input suffix="ios-search" placeholder="Enter text" style="width: 200px;margin-left: 15px;" />
             <ZTable border ref="selection" :columns="columns4" :data="data1" :show-header="false"></ZTable>
             <Page :total="100" style="margin-top:20px; float:right" show-sizer show-elevator />
