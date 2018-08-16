@@ -21,6 +21,8 @@
   width: 100%;
   .z-block-body {
     padding: 20px;
+    padding-bottom: 0;
   }
+  margin-bottom: 20px;
 }
 </style>

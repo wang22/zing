@@ -67,10 +67,10 @@ export default {
 .flex-form {
     display: inline-block;
     width: 100%;
-    border:1px dashed #ddd; 
-    padding: 20px 20px 0 20px; 
-    margin-bottom: 20px;
-    border-radius: 4px;
+    /* border:1px dashed #ddd;  */
+    /* padding: 20px 20px 0 20px;  */
+    /* margin-bottom: 20px; */
+    /* border-radius: 4px; */
 }
 .flex-form .query-btn {
     display: inline-block;
