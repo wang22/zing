@@ -22,7 +22,6 @@
                     </template>
                     <MenuItem name="3-1" to="/table/query">查询列表</MenuItem>
                     <MenuItem name="3-2" to="/table/base">标准列表</MenuItem>
-                    <MenuItem name="3-3" to="/table/card">卡片列表</MenuItem>
                 </Submenu>
                 <Submenu name="4">
                     <template slot="title">

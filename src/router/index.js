@@ -5,7 +5,6 @@ import BaseForm from '@/pages/form/BaseForm'
 import StepForm from '@/pages/form/StepForm'
 import QueryTable from '@/pages/table/QueryTable'
 import BaseTable from '@/pages/table/BaseTable'
-import CardTable from '@/pages/table/CardTable'
 import BasePage from '@/pages/page/BasePage'
 import SeniorPage from '@/pages/page/SeniorPage'
 import FailResult from '@/pages/result/FailResult'
@@ -42,11 +41,6 @@ export default new Router({
       path: '/table/base',
       name: 'BaseTable',
       component: BaseTable
-    },
-    {
-      path: '/table/card',
-      name: 'CardTable',
-      component: CardTable
     },
     {
       path: '/page/base',
