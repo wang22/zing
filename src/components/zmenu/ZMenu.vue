@@ -70,6 +70,12 @@
                     <MenuItem name="9-2">BTree</MenuItem>
                 </Submenu>
             </MenuGroup>
+            <MenuGroup title="AUTH">
+                <MenuItem name="8" to="/auth/login">
+                    <Icon type="ios-key-outline" />
+                    登录
+                </MenuItem>
+            </MenuGroup>
         </Menu>
     </div>
 </template>
